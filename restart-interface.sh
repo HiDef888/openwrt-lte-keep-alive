@@ -14,5 +14,5 @@ echo -e "AT+CGATT=1\r\n" > $INTERFACE
 
 sleep 120
 
-#particular use-case for me
+#Particular use-case for me, interface change wipes my crontab
 #cat /etc/crontabs/root > /tmp/etc/crontabs/root
