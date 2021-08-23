@@ -12,8 +12,8 @@ SH_DNS_TESTS="$DIR/dns-test.sh"
 SH_RESTART_INTERFACE="$DIR/restart-interface.sh"
 SH_RESTART_ROUTER="$DIR/restart-router.sh"
 
-LINES_MAX=11000
-LINES_MIN=6000
+LINES_MAX=8000
+LINES_MIN=4000
 LINES_COUNT=$(wc -l $LOG_FILE | awk '{print $1}')
 
 # if the log files gets huge, strip it, keep last LINES_MIN lines
