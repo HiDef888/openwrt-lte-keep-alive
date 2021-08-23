@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/ash
 
 HOST="8.8.8.8"
 WAITFOR=3
