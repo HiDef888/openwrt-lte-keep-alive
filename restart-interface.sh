@@ -12,7 +12,7 @@ sleep 30
 echo "SH RESTART IFACE UP"
 echo -e "AT+CGATT=1\r\n" > $INTERFACE
 
-sleep 60
+sleep 120
 
 #particular use-case for me
 #cat /etc/crontabs/root > /tmp/etc/crontabs/root
