@@ -22,6 +22,6 @@ Online/offline results are being logged into `log.txt`, which has a cap of `8000
 **Installation**<br>
 1. Log into the router via SSH and go to the directory where you want to keep the script files.<br>
 2. Make sure the router is online, then **run the installer using this command** and follow the instructions:<br>
-   wget -q --no-check-certificate https://raw.githubusercontent.com/HiDef888/openwrt-lte-keep-alive/master/install.sh -O install.sh && chmod +x install.sh && ./install.sh
+  `wget -q --no-check-certificate https://raw.githubusercontent.com/HiDef888/openwrt-lte-keep-alive/master/install.sh -O install.sh && chmod +x install.sh && ./install.sh'
 3. Add to crontab: (`internet-keep-alive.sh`)<br>
 
