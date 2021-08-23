@@ -2,12 +2,13 @@
 # This file is responsible for restarting the network interface.
 # Should be run once OFFLINE state is detected.
 
-INTERFACE="wwan0"
+INTERFACE="/dev/ttyUSB2"
 
 echo "SH RESTART IFACE DOWN"
-ifdown $INTERFACE
+echo -e "AT+CGATT=0\r\n" > $INTERFACE
 
-sleep 3
+sleep 15
 
 echo "SH RESTART IFACE UP"
-ifup $INTERFACE
+echo -e "AT+CGATT=0\r\n" > $INTERFACE
+
