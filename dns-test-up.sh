@@ -6,8 +6,6 @@ HOST="8.8.8.8"
 WAITFOR=3
 TIMES=2
 
-ONLINE=0
-
 ping $HOST -c $TIMES -i $WAITFOR &> /dev/null
 pingReturn=$?
 
