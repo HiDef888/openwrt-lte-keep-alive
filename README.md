@@ -6,7 +6,7 @@ Forked from: https://github.com/mchsk/openwrt-lte-keep-alive - Many Thanks!
 
 **Changes from original.**<br>
 1. Switched to ping to relieve netcat dependency.
-2. Reduced log-size to save memory
+2. Reduced log-size to save memory <0.5MB
 3. Adjusted install script to fit new requirements
 
 **What is this? Long story short.**<br>
