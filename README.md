@@ -10,7 +10,7 @@ Forked from: https://github.com/mchsk/openwrt-lte-keep-alive - Many Thanks!
 3. Adjusted install script to fit new requirements
 
 **What is this? Long story short.**<br>
-If your `WAN` interface using `WWAN/QMI/NCM/3G protocol` with your modem is working but your connection drops from time to time, you have just found the safe heaven. These scripts make sure your router is online, managing your interface or router itself. You would probably find use of it when you need to have working internet in **locations with difficult access**, e.g. cabin in the woods, garage or your house on Seychelles.
+If your `WAN` interface using `WWAN/QMI/NCM/3G protocol` with your modem is working but your connection drops from time to time, you have just found a safe haven. These scripts make sure your router is online, managing your interface or router itself. You would probably find use of it when you need to have working internet in **locations with difficult access**, e.g. cabin in the woods, garage or your house on Seychelles.
 
 **How it works?**<br>
 All the scripts run on [ash](https://www.in-ulm.de/~mascheck/various/ash/) which is the basic shell for OpenWRT.
