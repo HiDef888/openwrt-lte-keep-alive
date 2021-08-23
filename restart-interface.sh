@@ -2,15 +2,10 @@
 # This file is responsible for restarting the network interface.
 # Should be run once OFFLINE state is detected.
 
-INTERFACE="wwan"
+INTERFACE="wwan0"
 
-# syslog entry
-logger -s "INTERNET KEEP ALIVE SYSTEM: Restarting the LTE interface."
-
-echo "SH RESTART IFACE DOWN"
 ifdown $INTERFACE
 
-sleep 2
+sleep 4
 
-echo "SH RESTART IFACE UP"
 ifup $INTERFACE
