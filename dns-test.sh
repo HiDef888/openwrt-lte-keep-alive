@@ -9,7 +9,7 @@ ONLINE=0
 
 for i in `seq 1 $PACKET_COUNT`;
         do
-                nc -G 2 -z $IP_TO_PING 53
+                nc -w 3 -z $IP_TO_PING 53
                 RETVAL=$?
 				if [ $RETVAL -eq 0 ]; then
 					ONLINE=1
