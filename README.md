@@ -3,11 +3,13 @@
 ![How it looks](https://raw.githubusercontent.com/mchsk/openwrt-lte-keep-alive/assets/images/screenshot1.png)
 
 **Forked from: https://github.com/mchsk/openwrt-lte-keep-alive - Many Thanks!**
+**Special thanks to hazarjast**
 
 **Changes from original.**<br>
 1. Switched to ping to relieve netcat dependency.
-2. Reduced log-size to save memory <0.5MB
-3. Adjusted install script to fit new requirements
+2. Reduced log-size to save memory <0.5MB.
+3. Disconnect/Reconnect modem - instead of wwan iface - on connection failure.
+4. Adjusted install script to fit new requirements.
 
 **What is this? Long story short.**<br>
 If your `WAN` interface using `WWAN/QMI/NCM/3G protocol` with your modem is working but your connection drops from time to time, you have just found a safe haven. These scripts make sure your router is online, managing your interface or router itself. You would probably find use of it when you need to have working internet in **locations with difficult access**, e.g. cabin in the woods, garage or your house on Seychelles.
