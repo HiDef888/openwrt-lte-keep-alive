@@ -12,4 +12,4 @@ echo "$(date) > NOW!" >> $LOG_FILE
 echo "$(date) > SORRY FOR ANY INCONVENIENCE." >> $LOG_FILE
 
 echo "SH REBOOT"
-/sbin/reboot
+reboot
