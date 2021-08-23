@@ -14,4 +14,5 @@ echo -e "AT+CGATT=1\r\n" > $INTERFACE
 
 sleep 60
 
-cat /etc/crontabs/root > /tmp/etc/crontabs/root
+#particular use-case for me
+#cat /etc/crontabs/root > /tmp/etc/crontabs/root
