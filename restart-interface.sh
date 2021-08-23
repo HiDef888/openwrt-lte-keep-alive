@@ -4,8 +4,10 @@
 
 INTERFACE="wwan0"
 
+echo "SH RESTART IFACE DOWN"
 ifdown $INTERFACE
 
-sleep 4
+sleep 3
 
+echo "SH RESTART IFACE UP"
 ifup $INTERFACE
