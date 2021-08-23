@@ -10,9 +10,9 @@ ping $HOST -c $TIMES -i $WAITFOR &> /dev/null
 pingReturn=$?
 
 if [ $pingReturn -eq 0 ]; then
-    # It works
+    # ONLINE
     exit 0
 else
-    # No access
+    # OFFLINE
     exit 1
 fi
