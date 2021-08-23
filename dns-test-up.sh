@@ -1,4 +1,6 @@
 #!/bin/ash
+# This file is responsible for DNS check. The return value of its process
+# determines the ONLINE/OFFLINE state.
 
 HOST="8.8.8.8"
 WAITFOR=3
