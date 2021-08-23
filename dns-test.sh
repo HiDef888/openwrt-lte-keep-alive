@@ -3,7 +3,7 @@
 # determines the ONLINE/OFFLINE state.
 
 IP_TO_PING=8.8.8.8
-PACKET_COUNT=4
+PACKET_COUNT=3
 
 ONLINE=0
 
