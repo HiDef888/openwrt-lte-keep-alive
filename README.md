@@ -2,7 +2,6 @@
 ![OpenWRT logo](https://raw.githubusercontent.com/mchsk/openwrt-lte-keep-alive/assets/images/openwrt.png)
 
 **Forked from: https://github.com/mchsk/openwrt-lte-keep-alive - Many Thanks!**<br>
-**Special thanks to hazarjast**
 
 **Changes from original.**<br>
 1. Switched to ping to relieve netcat dependency.
