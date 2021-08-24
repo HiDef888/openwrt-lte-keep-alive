@@ -7,7 +7,7 @@
     echo "There are 2 important steps to finish this setup:"
     echo ""
     echo "1. Make sure this line is in the cron."
-    echo "   */15 * * * * $DIR/internet-keep-alive.sh"
+    echo "   */20 * * * * $DIR/internet-keep-alive.sh"
     echo ""
     echo "Enjoy!"
 
