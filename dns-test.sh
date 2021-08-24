@@ -6,7 +6,7 @@ HOST="8.8.8.8"
 WAITFOR=3
 TIMES=2
 
-ping $HOST -c $TIMES -i $WAITFOR &> /dev/null
+ping $HOST -c $TIMES -w $WAITFOR &> /dev/null
 pingReturn=$?
 
 if [ $pingReturn -eq 0 ]; then
