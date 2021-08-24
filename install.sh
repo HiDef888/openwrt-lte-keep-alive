@@ -23,7 +23,6 @@ download_files()
 	echo "Downloading files from https://github.com/mchsk/openwrt-lte-keep-alive ..."
     wget -q --no-check-certificate https://raw.githubusercontent.com/HiDef888/openwrt-lte-keep-alive/master/dns-test.sh -O dns-test.sh && chmod +x dns-test.sh
     wget -q --no-check-certificate https://raw.githubusercontent.com/HiDef888/openwrt-lte-keep-alive/master/internet-keep-alive.sh -O internet-keep-alive.sh && chmod +x internet-keep-alive.sh
-    wget -q --no-check-certificate https://raw.githubusercontent.com/HiDef888/openwrt-lte-keep-alive/master/restart-interface.sh -O restart-interface.sh && chmod +x restart-interface.sh
     wget -q --no-check-certificate https://raw.githubusercontent.com/HiDef888/openwrt-lte-keep-alive/master/restart-router.sh -O restart-router.sh && chmod +x restart-router.sh
 }
 
