@@ -6,11 +6,8 @@
     echo "NICE ;)"
     echo "There are 2 important steps to finish this setup:"
     echo ""
-    echo "1. Make sure this line is in the cron. To open the cron editor, run: crontab -e"
-    echo "   */2 * * * * $DIR/internet-keep-alive.sh"
-    echo ""  
-    echo "2. The interface representing the LTE connection is set to '/dev/ttyUSB2'."
-    echo "   To change the interface, please edit the line INTERFACE='/dev/ttyUSB2' in the 'restart-interface.sh'."
+    echo "1. Make sure this line is in the cron."
+    echo "   */15 * * * * $DIR/internet-keep-alive.sh"
     echo ""
     echo "Enjoy!"
 
