@@ -5,8 +5,8 @@
 DIR=$( cd $(dirname $0) ; pwd -P )
 LOG_FILE="$DIR/log.txt"
 
-OFFLINE_COUNT=$(cat $LOG_FILE | tail -4 | grep OFFLINE | wc -l)
-OFFLINE_COUNT_TRESHOLD=4
+OFFLINE_COUNT=$(cat $LOG_FILE | tail -3 | grep OFFLINE | wc -l)
+OFFLINE_COUNT_TRESHOLD=3
 
 SH_DNS_TESTS="$DIR/dns-test.sh"
 SH_RESTART_INTERFACE="$DIR/restart-interface.sh"
@@ -26,14 +26,11 @@ fi
 
 if [ $? -eq 1 ]; then
    echo "Ooops, we're offline!"
-   echo "$(date) OFFLINE > RESTARTING INTERFACE" >> $LOG_FILE
+   echo "$(date) OFFLINE" >> $LOG_FILE
 
    if [[ "$OFFLINE_COUNT" -ge "$OFFLINE_COUNT_TRESHOLD" ]]; then
       echo ">> Restarting router.."
       $SH_RESTART_ROUTER
-   else
-      echo ">> Restarting interface.."
-      $SH_RESTART_INTERFACE
    fi
 else
    echo "We're okay!"
